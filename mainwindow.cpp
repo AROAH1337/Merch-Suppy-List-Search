@@ -12,3 +12,13 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_submit_clicked()
+{
+
+}
+
+void MainWindow::on_actionOpen_Merch_List_triggered()
+{
+
+}

@@ -13,7 +13,6 @@ ws = wb.get_sheet_by_name('Current Items')
 print("Enter search query")
 query = str(raw_input(">"))
 
-#find a better way to do a loop like this...
 while 1 == 1:
         currentCell = ws.cell(row=rowCount, column=6).value.encode('ascii', 'replace')
         if query in currentCell.lower() or query in currentCell or query in currentCell.upper():

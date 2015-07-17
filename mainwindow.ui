@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1024</width>
-    <height>768</height>
+    <width>640</width>
+    <height>640</height>
    </rect>
   </property>
   <property name="font">
@@ -28,7 +28,7 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>50</x>
       <y>90</y>
       <width>187</width>
       <height>161</height>
@@ -57,37 +57,37 @@
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton">
+      <widget class="QRadioButton" name="straightTalk">
        <property name="text">
         <string>Straight Talk</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_4">
+      <widget class="QRadioButton" name="totalWireless">
        <property name="text">
         <string>Total Wireless</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_3">
+      <widget class="QRadioButton" name="net10">
        <property name="text">
         <string>Net10</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_2">
+      <widget class="QRadioButton" name="tracfone">
        <property name="text">
         <string>Tracfone</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox">
+      <widget class="QCheckBox" name="searchAll">
        <property name="text">
-        <string>Search All</string>
+        <string>Search All/Unbranded</string>
        </property>
       </widget>
      </item>
@@ -122,49 +122,49 @@
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_5">
+      <widget class="QRadioButton" name="chitCards">
        <property name="text">
         <string>Chit Cards/Dummy Boxes</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_10">
+      <widget class="QRadioButton" name="dummyPhones">
        <property name="text">
         <string>Dummy Phones</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_6">
+      <widget class="QRadioButton" name="brochures">
        <property name="text">
         <string>Brochures</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_7">
+      <widget class="QRadioButton" name="headers">
        <property name="text">
         <string>Headers</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_8">
+      <widget class="QRadioButton" name="footers">
        <property name="text">
         <string>Footers</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_9">
+      <widget class="QRadioButton" name="popOutBoxes">
        <property name="text">
         <string>Pop Out Boxes</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_11">
+      <widget class="QRadioButton" name="hardwareMisc">
        <property name="text">
         <string>Hardware/Misc.</string>
        </property>
@@ -172,44 +172,11 @@
      </item>
     </layout>
    </widget>
-   <widget class="QScrollArea" name="Results">
+   <widget class="QLineEdit" name="searchBox">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>500</y>
-      <width>811</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>809</width>
-       <height>169</height>
-      </rect>
-     </property>
-     <widget class="QListView" name="resultsList">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>811</width>
-        <height>171</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>330</y>
+      <x>50</x>
+      <y>310</y>
       <width>451</width>
       <height>31</height>
      </rect>
@@ -222,18 +189,37 @@
     <property name="text">
      <string/>
     </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Search</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="submit">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>330</y>
+      <x>510</x>
+      <y>310</y>
       <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Submit</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>541</width>
+      <height>161</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -242,8 +228,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1024</width>
-     <height>20</height>
+     <width>640</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -260,7 +246,7 @@
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
